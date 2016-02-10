@@ -13,23 +13,23 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <RelativePanel Background="{ThemeResource AppBarBackgroundThemeBrush}" >
-            <Button x:Name="HamburgerButton" 
-                    FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="20"
+        <RelativePanel Background="{ThemeResource AppBarBackgroundThemeBrush}" Height="40">
+            <Button x:Name="HamburgerButton" Height="40"
+                    FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="24"
                     Click="HamburgerButton_Click"  Background="{ThemeResource ButtonBackgroundThemeBrush}"/>
-            <Button x:Name="BackButton" 
+            <Button x:Name="BackButton" Height="40"
                     RelativePanel.RightOf="HamburgerButton"
                     FontFamily="Segoe MDL2 Assets" Content="&#xE0C4;" FontSize="20"
                     Background="{ThemeResource AppBarBackgroundThemeBrush}"/>
             <TextBlock x:Name="TitleTextBlock" Text="Home" RelativePanel.RightOf="BackButton"
-                       Margin="8,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True"
+                       Margin="8,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontWeight="Bold"
                        HorizontalAlignment="Stretch"
                        />
-            <Button x:Name="EditButton" 
+            <Button x:Name="EditButton" Height="40"
                     RelativePanel.LeftOf="SearchButton"
                     FontFamily="Segoe MDL2 Assets" Content="&#xE10C;" FontSize="20"
                     Background="{ThemeResource AppBarBackgroundThemeBrush}"/>
-            <Button x:Name="SearchButton" 
+            <Button x:Name="SearchButton" Height="40"
                     RelativePanel.AlignRightWithPanel="True"
                     FontFamily="Segoe MDL2 Assets" Content="&#xE094;" FontSize="20"
                     Background="{ThemeResource AppBarBackgroundThemeBrush}"/>
@@ -37,7 +37,7 @@
         </RelativePanel>
 
         <SplitView x:Name="MySplitView" Grid.Row="1" DisplayMode="CompactOverlay"
-                   OpenPaneLength="200" CompactPaneLength="40"
+                   OpenPaneLength="200" CompactPaneLength="44"
                    HorizontalAlignment="Left">
             <SplitView.Pane>
                 <ListBox SelectionMode="Single" x:Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged">
@@ -71,7 +71,7 @@
             <SplitView.Content>
                 <StackPanel >
                     <!--<TextBlock x:Name="ResultTextBlock" />-->
-                    <ListBox Background="White">
+                    <!--<ListBox Background="White">
                         <ListBoxItem>Sprint Delivery</ListBoxItem>
                         <ListBoxItem>Sprint Delivery</ListBoxItem>
                         <ListBoxItem>Sprint Delivery</ListBoxItem>
@@ -80,7 +80,7 @@
                         <ListBoxItem>Sprint Delivery</ListBoxItem>                 
                         <ListBoxItem>Sprint Delivery</ListBoxItem>
                      
-                    </ListBox>
+                    </ListBox>-->
                 </StackPanel>
                 
             </SplitView.Content>
